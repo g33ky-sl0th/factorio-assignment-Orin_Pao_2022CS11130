@@ -97,6 +97,3 @@ Both are designed to be deterministic and able to complete in less than 2 second
 - **Disconnected Graph Components**: The LP ensures only the component connected to the sink receives flow. Disconnected sources contribute zero flow, and their remaining supply appears in the residual graph for infeasibility analysis.
 - **Infeasible Cases**: Detected when `v < total_target`. The min-cut analysis identifies bottlenecks (tight edges/nodes) accurately.
 - **Implementation**: Node splitting and direct lower-bound constraints ensure all edge cases (e.g., zero-flow edges, fully saturated nodes) are handled correctly.
-
-## Conclusion
-The implementation uses a robust LP-based approach for both `factory` and `belts`, leveraging PuLP and CBC for efficiency and reliability. It handles all specified edge cases, enforces strict tolerances, and ensures deterministic output, meeting the performance and correctness requirements of the assignment.
