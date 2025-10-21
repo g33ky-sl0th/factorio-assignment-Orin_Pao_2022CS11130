@@ -16,3 +16,4 @@ CPU -
 
 language - Python 3.10.12
 RAM - 16GB
+Solver used by PuLP - ['HIGHS_CMD', 'PULP_CBC_CMD']
